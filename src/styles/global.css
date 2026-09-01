@@ -1,0 +1,101 @@
+/* ==================== 全局样式 ==================== */
+:root {
+  /* 主色调：教育蓝 */
+  --edu-primary: #9bbbf4;
+  --edu-primary-dark: #7aa3e8;
+  --edu-primary-light: #dbe7fb;
+  --edu-bg: #f4f3ee;
+  --edu-card: #ffffff;
+  --edu-text: #2b2b2b;
+  --edu-text-light: #7a7a7a;
+  --edu-danger: #ee6161;
+  --edu-warning: #f2a84b;
+  --edu-success: #67c23a;
+  --edu-radius: 12px;
+  --van-primary-color: #9bbbf4;
+  --van-button-primary-background: #9bbbf4;
+  --van-button-primary-border-color: #9bbbf4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--edu-bg);
+  color: var(--edu-text);
+  font-family: 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont,
+    'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+/* 通用页面容器（PC 左菜单 + 内容区；移动端底部 TabBar） */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 16px 80px;
+}
+
+/* 页面标题 */
+.page-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+/* 卡片 */
+.edu-card {
+  background: var(--edu-card);
+  border-radius: var(--edu-radius);
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* 顶部导航工具栏 */
+.page-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+/* 通用滚动容器 */
+.scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 空态 */
+.empty-box {
+  padding: 40px 0;
+  text-align: center;
+  color: var(--edu-text-light);
+}
+
+/* ==================== 响应式：PC 端（≥768px） ==================== */
+@media (min-width: 768px) {
+  .page-container {
+    padding: 24px 24px 40px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+}
+
+/* 触控目标不小于 44px */
+.van-cell,
+.van-button,
+.van-tabbar-item,
+.van-field {
+  min-height: 44px;
+}

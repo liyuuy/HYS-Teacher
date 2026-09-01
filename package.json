@@ -1,0 +1,24 @@
+{
+  "name": "teacher-workbench",
+  "version": "1.0.0",
+  "private": true,
+  "description": "教师工作台 - 教师个人工作台 Web 应用",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "pinia": "^2.2.6",
+    "vant": "^4.9.8",
+    "vue": "^3.5.13",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^5.4.11",
+    "vite-plugin-pwa": "^0.21.1"
+  }
+}
