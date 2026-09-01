@@ -5,7 +5,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // 部署在 GitHub Pages 时，将 base 改为 '/<仓库名>/'，例如 '/teacher-workbench/'
 export default defineConfig({
-  base: '/HYS-Teacher',
+  base: '/HYS-Teacher/',
   plugins: [
     vue(),
     VitePWA({
